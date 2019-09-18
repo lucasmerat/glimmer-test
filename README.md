@@ -1,6 +1,6 @@
-# Ember Octane Workshop: Shlack
+# Ember Octane Workshop Austin: Shlack
 
-This is the project used for the <a title="Mike North's" href="https://github.com/mike-north">Mike North's</a> <a title="Ember Octane" href="https://emberjs.com/editions/octane/">Ember Octane</a> course, where we build a chat app together step-by-step
+This is the project used for the <a title="Ember Octane" href="https://emberjs.com/editions/octane/">Ember Octane</a> workshop in Austin, TX, where we use parts of <a title="Mike North's" href="https://github.com/mike-north">Mike North's</a> course build a chat app together
 
 ![](./notes/img/app.png)
 
@@ -69,7 +69,7 @@ Particularly if you’ve never tried it before, you should install [Microsoft Vi
 ### Clone the Project
 
 ```sh
-git clone git@github.com:mike-north/ember-octane-workshop.git shlack
+git clone git@github.com:kiwiupover/eowa.git shlack
 ```
 
 ### Install dependencies
