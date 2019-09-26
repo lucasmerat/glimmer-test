@@ -1,10 +1,29 @@
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
+import { tracked } from "@glimmer/tracking";
 
 export default class LoginLoginFormComponent extends Component {
 
+  @tracked
+  userId = ''
+
+  get isDisabled() {
+    return !this.userId
+  }
+
   handleSignIn(value) {
     console.log('sign in user with id of:', value);
+  }
+
+  /**
+   *
+   * @param {Event & { target: HTMLSelectElement}} evt
+   */
+  @action
+  onSelectChange(evt) {
+    const { value } = evt.target
+
+    this.userId = value;
   }
 
   /**
@@ -14,9 +33,7 @@ export default class LoginLoginFormComponent extends Component {
   @action
   onLoginFormSubmit(evt) {
     evt.preventDefault();
-    const { target } = evt;
-    const selectElement = evt.target.querySelector('select');
 
-    this.handleSignIn(selectElement.value);
+    this.handleSignIn(this.userId);
   }
 }
