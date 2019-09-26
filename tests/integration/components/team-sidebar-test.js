@@ -20,7 +20,11 @@ module('Integration | Component | team-sidebar', function(hooks) {
       .trim()
       .replace(/\s*\n+\s*/g, '\n')
       .split('\n'),
-      ['LinkedIn', 'Mike North (LOL)', 'Channels', '#', 'general', 'Logout']
+      [
+        "Mike North (LOL)",
+        "Channels",
+        "Logout"
+      ]
     );
   });
 });
